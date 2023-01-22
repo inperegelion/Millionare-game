@@ -10,7 +10,7 @@ export default function Start(): JSX.Element {
   const onStart = (): void => {
     console.log('start');
 
-    navigate(ROUTE_GAME);
+    navigate(`${ROUTE_GAME}0`);
   };
 
   return (

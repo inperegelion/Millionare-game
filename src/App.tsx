@@ -3,8 +3,9 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import { ROUTE_GAME, ROUTE_ROOT } from './constants';
+import { ROUTE_GAME_TEMPLATE, ROUTE_ROOT } from './constants';
 import Start from './pages/start';
+import Game from './pages/game';
 
 import './App.css';
 
@@ -14,8 +15,8 @@ const router = createBrowserRouter([
     element: <Start />,
   },
   {
-    path: ROUTE_GAME,
-    element: <div>gamer</div>,
+    path: ROUTE_GAME_TEMPLATE,
+    element: <Game />,
   },
 ]);
 
