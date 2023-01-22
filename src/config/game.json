@@ -1,0 +1,83 @@
+{
+  "answerNames": ["A", "B", "C", "D"],
+  "questions": [
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "loli-pop"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$500"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$1,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$2,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$4,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$8,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$16,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$32,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$64,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$125,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$250,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$500,000"
+    },
+    {
+      "questionText": "Right, isn't its?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswersIndexes": [4],
+      "remuneration": "$1,000,000"
+    }
+  ]
+}

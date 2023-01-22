@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+
+import { ROUTE_GAME, ROUTE_ROOT } from './constants';
+import Start from './pages/start';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const router = createBrowserRouter([
+  {
+    path: ROUTE_ROOT,
+    element: <Start />,
+  },
+  {
+    path: ROUTE_GAME,
+    element: <div>gamer</div>,
+  },
+]);
+
+function App(): JSX.Element {
+  return <RouterProvider router={router} />;
 }
 
 export default App;
