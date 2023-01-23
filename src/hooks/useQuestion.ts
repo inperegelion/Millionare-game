@@ -3,7 +3,7 @@ import { getQuestion } from '../config';
 import { QUESTION_INDEX } from '../constants';
 import { IQuestion } from '../interfaces';
 
-export default function useQuestionIndex(): number {
+export function useQuestionIndex(): number {
   const params = useParams();
   const questionIndex = Number(params[QUESTION_INDEX]);
   if (Number.isNaN(questionIndex)) throw new Error('DO NOT PLAY WITH ME!');

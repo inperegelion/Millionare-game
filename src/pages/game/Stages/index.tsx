@@ -1,7 +1,7 @@
 // import './style.scss';
 
 import { getRemunerations } from '../../../config';
-import useQuestionIndex from '../../../hooks/useQuestion';
+import { useQuestionIndex } from '../../../hooks/useQuestion';
 
 export default function Stages(): JSX.Element {
   const questionIndex = useQuestionIndex();

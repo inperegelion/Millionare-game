@@ -22,3 +22,8 @@ export function getRemunerations(): string[] {
   const questions = getQuestions();
   return questions.map((question) => question.remuneration);
 }
+
+export function getQuestionLength(): number {
+  const questions = getQuestions();
+  return questions.length;
+}
