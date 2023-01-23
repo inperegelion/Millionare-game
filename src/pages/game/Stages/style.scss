@@ -1,0 +1,38 @@
+@import "../../../styles/variables.scss";
+
+.Stages {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 1em;
+
+  overflow: hidden;
+
+  .Menu {
+    background: lightgreen;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 116%;
+  }
+
+  .Remunerations {
+    display: flex;
+    flex-direction: column-reverse;
+    background: rgb(238, 214, 144);
+
+    .Remuneration {
+      background: rgb(203, 144, 238);
+    }
+
+    .Active {
+      font-weight: bolder;
+    }
+  }
+}

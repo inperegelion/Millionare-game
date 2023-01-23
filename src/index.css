@@ -14,5 +14,6 @@ body {
 #root {
   height: 100%;
 
-  max-width: 340px;
+  max-width: 440px;
+  width: 100%;
 }

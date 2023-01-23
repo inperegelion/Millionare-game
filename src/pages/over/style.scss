@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.StartPage {
+.OverPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,23 +21,25 @@
     align-items: center;
     width: 100%;
 
-    .Title {
+    .ScoreLabel {
       text-align: center;
 
-      font-style: normal;
+      color: $black-100;
+      opacity: 0.5;
+
       font-weight: 600;
+      font-size: 18px;
+      line-height: 116%;
+
+      margin-block-end: 0;
+    }
+    .Score {
+      margin-block-start: 0.4em;
+
+      text-align: center;
+
       font-size: 32px;
       line-height: 116%;
     }
   }
-}
-
-.Triangle {
-  z-index: -1;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 100vh solid transparent;
-
-  border-right: 100vw solid $orange-5;
 }
