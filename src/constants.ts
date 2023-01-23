@@ -1,4 +1,5 @@
 export const ROUTE_ROOT = '/';
+export const ROUTE_ROOT_DEFAULT = '/*';
 
 export const ROUTE_GAME = '/game/';
 export const QUESTION_INDEX = 'questionIndex';

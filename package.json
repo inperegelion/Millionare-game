@@ -11,8 +11,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "yarn prettier --write .",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
@@ -42,8 +40,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.32.1",
-    "prettier": "2.8.3"
+    "eslint-plugin-react": "^7.32.1"
   },
   "browserslist": {
     "production": [
