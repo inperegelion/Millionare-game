@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/millionare-game/static/css/main.69c0c097.css",
-    "main.js": "/millionare-game/static/js/main.4967fd9b.js",
+    "main.js": "/millionare-game/static/js/main.53967bb8.js",
     "static/media/hand_thumb_up.svg": "/millionare-game/static/media/hand_thumb_up.ae778be2545d339186d7f27827d5ba72.svg",
     "index.html": "/millionare-game/index.html",
     "main.69c0c097.css.map": "/millionare-game/static/css/main.69c0c097.css.map",
-    "main.4967fd9b.js.map": "/millionare-game/static/js/main.4967fd9b.js.map"
+    "main.53967bb8.js.map": "/millionare-game/static/js/main.53967bb8.js.map"
   },
   "entrypoints": [
     "static/css/main.69c0c097.css",
-    "static/js/main.4967fd9b.js"
+    "static/js/main.53967bb8.js"
   ]
 }
