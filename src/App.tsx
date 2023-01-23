@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import { ROUTE_GAME_TEMPLATE, ROUTE_OVER_TEMPLATE, ROUTE_ROOT_DEFAULT } from './constants';
 import Start from './pages/start';
@@ -7,7 +7,7 @@ import Over from './pages/over';
 
 import './App.css';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: ROUTE_ROOT_DEFAULT,
     element: <Start />,
