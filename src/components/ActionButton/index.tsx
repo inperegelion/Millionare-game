@@ -9,7 +9,7 @@ export default function ActionButton(props: Props): JSX.Element {
   const { action, text } = props;
   return (
     <button
-      className="Button"//
+      className="Button" //
       type="button"
       onClick={action}
     >

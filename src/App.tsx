@@ -1,7 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { ROUTE_GAME_TEMPLATE, ROUTE_OVER, ROUTE_ROOT } from './constants';
 import Start from './pages/start';

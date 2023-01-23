@@ -58,6 +58,7 @@ export default function Answers(): JSX.Element {
         if (isSelected) classNames.push('Selected');
         if (isSubmited) {
           if (isCorrect) { classNames.push('Correct'); }
+
           if (isWrong) classNames.push('Wrong');
         }
 
@@ -65,7 +66,9 @@ export default function Answers(): JSX.Element {
           <button
             key={`answer-${answerNames[answerIndex]}`}
             type="button"
-            onClick={() => { handleAnswer(answerIndex); }}
+            onClick={() => {
+              handleAnswer(answerIndex);
+            }}
             className={classNames.join(' ')}
           >
             <span>{answerNames[answerIndex]}</span>

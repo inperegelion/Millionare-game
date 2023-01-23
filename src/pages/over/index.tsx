@@ -13,7 +13,11 @@ export default function Over(): JSX.Element {
 
   return (
     <div className="StartPage">
-      <img className="HandThumbUp" src={ICON_HandThumbUp} alt="a hand showing thumb up" />
+      <img
+        className="HandThumbUp"
+        src={ICON_HandThumbUp}
+        alt="a hand showing thumb up"
+      />
       <div className="PageContent">
         <h1 className="Title">Game Over</h1>
         <ActionButton action={onTryAgain} text="Try Again" />
