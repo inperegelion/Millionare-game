@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { useQuestion, useQuestionIndex } from '../../../hooks/useQuestion';
-import { getConfig, getQuestionLength } from '../../../config';
+import { getConfig, getQuestion, getQuestionsLength } from '../../../config';
 import './style.scss';
 import { ROUTE_GAME, ROUTE_OVER } from '../../../constants';
 
@@ -10,8 +10,10 @@ export default function Answers(): JSX.Element {
   const navigate = useNavigate();
   const question = useQuestion();
   const questionIndex = useQuestionIndex();
-  const { answerNames } = getConfig();
-  const questionLength = getQuestionLength();
+
+  const { answerNames, zeroWinRemuneration } = getConfig();
+  const questionLength = getQuestionsLength();
+
   const [isSubmited, setIsSumbited] = useState<boolean>(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number>();
   const isThereANextQuestion = questionLength > questionIndex + 1;
@@ -21,19 +23,22 @@ export default function Answers(): JSX.Element {
     setSelectedAnswerIndex(undefined);
   }
 
-  function gameOver(): void {
-    navigate(ROUTE_OVER);
+  function gameOver(remuneration: string): void {
+    navigate(`${ROUTE_OVER}${remuneration}`);
   }
 
   function goNext(): void {
     resetState();
     if (isThereANextQuestion) {
       navigate(`${ROUTE_GAME}${questionIndex + 1}`);
-    } else gameOver();
+    } else {
+      const remuneration = question?.remuneration ?? zeroWinRemuneration;
+      gameOver(remuneration);
+    }
   }
 
-  function handleAnswer(answerIndex: number): void {
-    // first click select an answer
+  function handleAnswerClick(answerIndex: number): void {
+    // first click selects an answer
     setSelectedAnswerIndex(answerIndex);
     // second click submits an answer
     if (selectedAnswerIndex === answerIndex) {
@@ -43,7 +48,10 @@ export default function Answers(): JSX.Element {
     if (isSubmited) {
       if (question?.correctAnswersIndexes === selectedAnswerIndex) {
         goNext();
-      } else gameOver();
+      } else {
+        const prevRemuneration = getQuestion(questionIndex - 1)?.remuneration;
+        gameOver(prevRemuneration ?? zeroWinRemuneration);
+      }
     }
   }
 
@@ -57,8 +65,7 @@ export default function Answers(): JSX.Element {
 
         if (isSelected) classNames.push('Selected');
         if (isSubmited) {
-          if (isCorrect) { classNames.push('Correct'); }
-
+          if (isCorrect) classNames.push('Correct');
           if (isWrong) classNames.push('Wrong');
         }
 
@@ -67,7 +74,7 @@ export default function Answers(): JSX.Element {
             key={`answer-${answerNames[answerIndex]}`}
             type="button"
             onClick={() => {
-              handleAnswer(answerIndex);
+              handleAnswerClick(answerIndex);
             }}
             className={classNames.join(' ')}
           >

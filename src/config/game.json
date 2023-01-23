@@ -2,6 +2,7 @@
   "answerNames": ["A", "B", "C", "D"],
   "answerOptionsPerQuestion": 3,
   "isMultipleResponsesEnabled": false,
+  "zeroWinRemuneration": "nothing",
   "questions": [
     {
       "questionText": "Скільки?",

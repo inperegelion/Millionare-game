@@ -1,12 +1,15 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import ICON_HandThumbUp from '../../assets/hand_thumb_up.svg';
 import ActionButton from '../../components/ActionButton';
-import { ROUTE_GAME } from '../../constants';
+import { ROUTE_GAME, YOUR_REMUNERATION } from '../../constants';
 import './style.scss';
 
 export default function Over(): JSX.Element {
   const navigate = useNavigate();
+  const params = useParams();
+  const yourRemuneration = String(params[YOUR_REMUNERATION]);
+
   const onTryAgain = (): void => {
     navigate(`${ROUTE_GAME}0`);
   };
@@ -19,7 +22,11 @@ export default function Over(): JSX.Element {
         alt="a hand showing thumb up"
       />
       <div className="PageContent">
-        <h1 className="Title">Game Over</h1>
+        <h2 className="Title">Total Score</h2>
+        <h1 className="Title">
+          {yourRemuneration}
+          {' earned'}
+        </h1>
         <ActionButton action={onTryAgain} text="Try Again" />
       </div>
       <div className="Triangle" />

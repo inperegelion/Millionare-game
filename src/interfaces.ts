@@ -9,5 +9,6 @@ export interface IConfig {
   answerNames: string[]
   isMultipleResponsesEnabled: boolean
   answerOptionsPerQuestion: number
+  zeroWinRemuneration: string
   questions: IQuestion[]
 }

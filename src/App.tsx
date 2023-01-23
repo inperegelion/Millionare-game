@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { ROUTE_GAME_TEMPLATE, ROUTE_OVER, ROUTE_ROOT } from './constants';
+import { ROUTE_GAME_TEMPLATE, ROUTE_OVER_TEMPLATE, ROUTE_ROOT } from './constants';
 import Start from './pages/start';
 import Game from './pages/game';
 import Over from './pages/over';
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     element: <Game />,
   },
   {
-    path: ROUTE_OVER,
+    path: ROUTE_OVER_TEMPLATE,
     element: <Over />,
   },
 ]);

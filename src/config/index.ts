@@ -23,7 +23,7 @@ export function getRemunerations(): string[] {
   return questions.map((question) => question.remuneration);
 }
 
-export function getQuestionLength(): number {
+export function getQuestionsLength(): number {
   const questions = getQuestions();
   return questions.length;
 }
