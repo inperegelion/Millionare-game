@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 import { useQuestion, useQuestionIndex } from '../../../hooks/useQuestion';
 import { getConfig, getQuestion, getQuestionsLength } from '../../../config';
-import './style.scss';
 import { ROUTE_GAME, ROUTE_OVER } from '../../../constants';
+import './style.scss';
 
 export default function Answers(): JSX.Element {
   const navigate = useNavigate();
@@ -78,8 +78,8 @@ export default function Answers(): JSX.Element {
             }}
             className={classNames.join(' ')}
           >
-            <span>{answerNames[answerIndex]}</span>
-            <span>{`-${answerText}`}</span>
+            <span className="AnswerName">{answerNames[answerIndex]}</span>
+            <span className="AnswerText">{answerText}</span>
           </button>
         );
       })}

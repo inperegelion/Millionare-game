@@ -8,10 +8,8 @@ export default function Game(): JSX.Element {
 
   return (
     <div className="GamePage">
-      {/* <div className="Question"> */}
       <h2 className="QuestionText">{question?.questionText}</h2>
       <Answers />
-      {/* </div> */}
       <Stages />
     </div>
   );

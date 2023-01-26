@@ -1,22 +1,9 @@
-// import './style.scss';
+import { useState } from 'react';
 
-import { PropsWithChildren, useState } from 'react';
+import MenuButton from '../../../components/MenuButton';
 import { getRemunerations } from '../../../config';
 import { useQuestionIndex } from '../../../hooks/useQuestion';
 import './style.scss';
-
-type MenuButtonProps = PropsWithChildren<{ isOpen: boolean, onClick: () => void }>;
-function MenuButton({ onClick, isOpen }: MenuButtonProps): JSX.Element {
-  return (
-    <button
-      className="Menu"
-      type="button"
-      onClick={onClick}
-    >
-      {isOpen ? 'X' : 'Menu'}
-    </button>
-  );
-}
 
 export default function Stages(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,18 +13,29 @@ export default function Stages(): JSX.Element {
   if (!isOpen) {
     return (
       <div className="Stages">
-        <MenuButton isOpen={isOpen} onClick={() => { setIsOpen(true); }} />
+        <MenuButton
+          isOpen={isOpen}
+          onClick={() => {
+            setIsOpen(true);
+          }}
+        />
       </div>
     );
   }
 
   return (
     <div className="Stages">
-      <MenuButton isOpen={isOpen} onClick={() => { setIsOpen(false); }} />
+      <MenuButton
+        isOpen={isOpen}
+        onClick={() => {
+          setIsOpen(false);
+        }}
+      />
       <div className="Remunerations">
         {remunerations.map((remuneration, i) => {
           const classNames = ['Remuneration'];
           if (questionIndex === i) classNames.push('Active');
+          else if (questionIndex > i) classNames.push('Passed');
           return (
             <p
               // eslint-disable-next-line react/no-array-index-key

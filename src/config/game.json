@@ -5,14 +5,19 @@
   "zeroWinRemuneration": "nothing",
   "questions": [
     {
-      "questionText": "Скільки?",
-      "answers": ["один", "два", "три", "чотири"],
+      "questionText": "On every question the right answer is D, it will help you test the app",
+      "answers": ["Wrong", "Wrong", "Wrong", "Correct"],
       "correctAnswersIndexes": 3,
       "remuneration": "loli-pop"
     },
     {
-      "questionText": "How much?",
-      "answers": ["one", "two", "three", "four"],
+      "questionText": "Even so my sun one early morn did shine,\n With all triumphant splendour on my brow;\n But out, alack, he was but one hour mine,\n The region cloud hath mask’d him from me now ?",
+      "answers": [
+        "My heart leaps up when I behold",
+        "A rainbow in the sky",
+        "So was it when my life began",
+        "So is it now I am a man "
+      ],
       "correctAnswersIndexes": 3,
       "remuneration": "$500"
     },

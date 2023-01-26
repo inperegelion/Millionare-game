@@ -5,7 +5,7 @@ import Start from './pages/start';
 import Game from './pages/game';
 import Over from './pages/over';
 
-import './App.css';
+import './App.scss';
 
 const router = createHashRouter([
   {

@@ -2,7 +2,7 @@
 
 .GamePage {
   position: relative;
-  background: lightblue;
+  background: $black-5;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,7 +15,14 @@
   .QuestionText {
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 18px;
     line-height: 116%;
+
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    color: $black-100;
   }
 }

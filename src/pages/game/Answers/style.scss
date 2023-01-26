@@ -1,9 +1,39 @@
 @import "../../../styles/variables.scss";
 
 .Answers {
+  display: flex;
+  flex-direction: column;
+
   .Answer {
+    border: none;
+    background: none;
+    height: fit-content;
+
+    height: 4em;
+    border: 1px solid $black-40;
+    margin: 4px;
+
     background: $white-100;
-    // background: blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .AnswerName {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 116%;
+      color: $orange-100;
+
+      margin: 1.5em;
+    }
+    .AnswerText {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 116%;
+    }
   }
   .Selected {
     background: $orange-5;
