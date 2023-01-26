@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/millionare-game/static/css/main.69c0c097.css",
-    "main.js": "/millionare-game/static/js/main.53967bb8.js",
+    "main.css": "/millionare-game/static/css/main.ac0211fe.css",
+    "main.js": "/millionare-game/static/js/main.e909b888.js",
     "static/media/hand_thumb_up.svg": "/millionare-game/static/media/hand_thumb_up.ae778be2545d339186d7f27827d5ba72.svg",
     "index.html": "/millionare-game/index.html",
-    "main.69c0c097.css.map": "/millionare-game/static/css/main.69c0c097.css.map",
-    "main.53967bb8.js.map": "/millionare-game/static/js/main.53967bb8.js.map"
+    "static/media/cross_close_menu.svg": "/millionare-game/static/media/cross_close_menu.46c988ed96b5dff532f35b64d057e9c3.svg",
+    "static/media/burgir_open_menu.svg": "/millionare-game/static/media/burgir_open_menu.4cc3cba447218668ce9e22ca3a4cea9b.svg",
+    "main.ac0211fe.css.map": "/millionare-game/static/css/main.ac0211fe.css.map",
+    "main.e909b888.js.map": "/millionare-game/static/js/main.e909b888.js.map"
   },
   "entrypoints": [
-    "static/css/main.69c0c097.css",
-    "static/js/main.53967bb8.js"
+    "static/css/main.ac0211fe.css",
+    "static/js/main.e909b888.js"
   ]
 }
